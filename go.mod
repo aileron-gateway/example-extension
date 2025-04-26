@@ -1,6 +1,10 @@
 module github.com/aileron-gateway/example-extension
 
-go 1.23.2
+go 1.23.0
+
+toolchain go1.24.0
+
+godebug default=go1.24
 
 require (
 	github.com/aileron-gateway/aileron-gateway v1.0.1

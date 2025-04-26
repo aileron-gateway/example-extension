@@ -20,11 +20,11 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           version: "30.x"
+      - run: go install "google.golang.org/protobuf/cmd/protoc-gen-go@latest"
+      - run: go get ./...
       - run: make proto
-      - name: Build binary
-        run: CGO_ENABLED=0 go build -trimpath -ldflags="-w -s -extldflags '-static'"
-      - name: Run test
-        run: |
+      - run: CGO_ENABLED=0 go build -trimpath -ldflags="-w -s -extldflags '-static'"
+      - run: |
           ./example-extension -f config.yaml &
           sleep 2
           curl --max-time 10 "http://localhost:8080/get"

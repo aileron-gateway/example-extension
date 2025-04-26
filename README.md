@@ -1,14 +1,26 @@
-# An example project extending the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) as library
+# Example project extending the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) <!-- omit in toc -->
 
 This project extend the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) by importing it to Go project.
 
 ```mermaid
 graph BT
     AG("<a style="color:#000" href='https://github.com/aileron-gateway/aileron-gateway'>aileron-gateway</a>")
-    EE("example-extension\n(This repository)")
+    EE("example-extension</br>(This repository)")
     EE -- import ---> AG
     style EE fill:#ffcce5,stroke:#ff7fbf
 ```
+
+**To build and run the example, follow the steps.**
+
+- [Prepare development environment](#prepare-development-environment)
+  - [1. Install Protoc](#1-install-protoc)
+  - [2. Install protoc-gen-go](#2-install-protoc-gen-go)
+  - [3. protovalidate](#3-protovalidate)
+- [Write code](#write-code)
+- [Build binary](#build-binary)
+  - [1. Generate Go code from proto](#1-generate-go-code-from-proto)
+  - [2. Build binary](#2-build-binary)
+- [Run binary](#run-binary)
 
 ## Prepare development environment
 
@@ -82,6 +94,7 @@ protoc \
 For convenience, the command can be run with [./Makefile](./Makefile).
 
 ```bash
+go get ./... # Download aileron-gateway repository.
 make proto
 ```
 
