@@ -1,0 +1,48 @@
+syntax = "proto3";
+package ext.v1;
+
+import "kernel/resource.proto";
+
+option go_package = "github.com/aileron-gateway/example-extension/apis/ext/v1";
+
+// HelloHeaderMiddleware is the top level definition
+// for configurations of the middleware.
+// The structure must be same for all resources.
+message HelloHeaderMiddleware {
+    // APIVersion is api version of the middleware.
+    // The api version is defined in the Go code.
+    // "ext/v1" should be specified in this example project.
+    string APIVersion = 1 [json_name = "apiVersion"];
+
+    // Kind is the resource name of the middleware.
+    // The name  is defined in the Go code.
+    // "HelloHeaderMiddleware" should be specified in this example project.
+    string Kind = 2 [json_name = "kind"];
+
+    // Metadata is the metadata of the middleware.
+    // It contains "name" and "namespace".
+    // They can be used to make multiple instance of the middleware.
+    // If not specified in configuration, both "name" and "namespace"
+    // will becomes "default".
+    kernel.Metadata Metadata = 3 [json_name = "metadata"];
+
+    // Status is the status of the middleware.
+    // This item must be managed in the codes and should not
+    // be set in configuration files.
+    kernel.Status Status = 4 [json_name = "status"];
+
+    // Spec is the main specifications for the middleware.
+    // All middleware specific configurations should go in the spec.
+    HelloHeaderMiddlewareSpec Spec = 5 [json_name = "spec"];
+}
+
+// HelloHeaderMiddlewareSpec is the middleware specific configurations.
+message HelloHeaderMiddlewareSpec {
+    // ErrorHandler is the reference to a error handler resource.
+    // It is used to return HTTP errors to clients when
+    // some error occurred.
+    kernel.Reference ErrorHandler = 1 [json_name = "errorHandler"];
+
+    // Value is the "Hello" header value.
+    string Value = 2 [json_name = "value"];
+}

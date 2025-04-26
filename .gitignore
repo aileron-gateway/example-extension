@@ -1,0 +1,7 @@
+main
+example-extension
+*.env
+*.exe
+
+.vscode/**
+.idea/**
