@@ -6,7 +6,7 @@ import (
 	"github.com/aileron-gateway/aileron-gateway/kernel/api"
 	"github.com/aileron-gateway/aileron-gateway/kernel/log"
 	utilhttp "github.com/aileron-gateway/aileron-gateway/util/http"
-	v1 "github.com/aileron-gateway/example-extension/apis/sample/v1"
+	v1 "github.com/aileron-gateway/example-extension/apis/ext/v1"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 
