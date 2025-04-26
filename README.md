@@ -5,7 +5,7 @@ This project extend the [AILERON Gateway](https://github.com/aileron-gateway/ail
 ```mermaid
 graph BT
     AG("<a style="color:#000" href='https://github.com/aileron-gateway/aileron-gateway'>aileron-gateway</a>")
-    EE("example-extension\n(This repository)")
+    EE("example-extension</br>(This repository)")
     EE -- import ---> AG
     style EE fill:#ffcce5,stroke:#ff7fbf
 ```
