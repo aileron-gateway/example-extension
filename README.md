@@ -1,4 +1,4 @@
-# An example project extending the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) as library <!-- omit in toc -->
+# Example project extending the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) <!-- omit in toc -->
 
 This project extend the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway) by importing it to Go project.
 
