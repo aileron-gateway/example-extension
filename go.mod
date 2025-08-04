@@ -7,17 +7,19 @@ toolchain go1.24.0
 godebug default=go1.24
 
 require (
-	github.com/aileron-gateway/aileron-gateway v1.0.3
+	github.com/aileron-gateway/aileron-gateway v1.0.4
 	google.golang.org/protobuf v1.36.6
 )
 
 require (
 	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.36.6-20250425153114-8976f5be98c1.1 // indirect
 	cel.dev/expr v0.24.0 // indirect
-	github.com/aileron-projects/go v0.0.0-alpha.11 // indirect
+	github.com/aileron-projects/go v0.0.0-alpha.14 // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/bufbuild/protovalidate-go v0.10.1 // indirect
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
+	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/google/cel-go v0.25.0 // indirect
 	github.com/google/pprof v0.0.0-20250501235452-c0086092b71a // indirect
