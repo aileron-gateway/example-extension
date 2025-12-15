@@ -8,7 +8,7 @@ godebug default=go1.24
 
 require (
 	github.com/aileron-gateway/aileron-gateway v1.0.4
-	google.golang.org/protobuf v1.36.10
+	google.golang.org/protobuf v1.36.11
 )
 
 require (
