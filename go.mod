@@ -1,26 +1,29 @@
 module github.com/aileron-gateway/example-extension
 
-go 1.25
+go 1.26
 
 godebug default=go1.24
 
 require (
-	github.com/aileron-gateway/aileron-gateway v1.1.0
-	google.golang.org/protobuf v1.36.11
+	github.com/aileron-gateway/aileron-gateway v1.2.0
+	google.golang.org/protobuf v1.36.12
 )
 
 require (
 	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.36.11-20251209175733-2a1774d88802.1 // indirect
 	buf.build/go/protovalidate v1.1.0 // indirect
 	cel.dev/expr v0.25.1 // indirect
-	github.com/aileron-projects/go v0.0.0-alpha.17 // indirect
+	github.com/aileron-projects/go v0.0.0-alpha.18 // indirect
 	github.com/andybalholm/brotli v1.2.0 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/google/cel-go v0.26.1 // indirect
+	github.com/kr/pretty v0.3.1 // indirect
+	github.com/kr/text v0.2.0 // indirect
 	github.com/quic-go/qpack v0.6.0 // indirect
 	github.com/quic-go/quic-go v0.57.1 // indirect
+	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/stoewer/go-strcase v1.3.1 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
