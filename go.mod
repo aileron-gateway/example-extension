@@ -5,7 +5,7 @@ go 1.26
 godebug default=go1.24
 
 require (
-	github.com/aileron-gateway/aileron-gateway v1.2.0
+	github.com/aileron-gateway/aileron-gateway v1.2.1
 	google.golang.org/protobuf v1.36.12
 )
 
