@@ -5,7 +5,7 @@ go 1.26
 godebug default=go1.24
 
 require (
-	github.com/aileron-gateway/aileron-gateway v1.2.2
+	github.com/aileron-gateway/aileron-gateway v1.2.3
 	google.golang.org/protobuf v1.36.12
 )
 
@@ -14,7 +14,7 @@ require (
 	buf.build/go/protovalidate v1.1.0 // indirect
 	cel.dev/expr v0.25.1 // indirect
 	github.com/aileron-projects/go v0.0.0-alpha.19 // indirect
-	github.com/andybalholm/brotli v1.2.0 // indirect
+	github.com/andybalholm/brotli v1.2.7 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
